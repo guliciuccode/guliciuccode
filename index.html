@@ -638,7 +638,9 @@ p.lede{font-family:var(--wide);font-variation-settings:"wdth" 100;font-weight:40
   layoutRails(); window.addEventListener('resize',layoutRails);
   if(document.fonts&&document.fonts.ready) document.fonts.ready.then(layoutRails);
   var start=parseInt((location.hash||'#1').slice(1),10)-1;
-  requestAnimationFrame(function(){show(isNaN(start)?0:start)});
+  var s0=isNaN(start)?0:start, started=false;
+  function boot(){ if(started) return; started=true; show(s0); }
+  requestAnimationFrame(boot); setTimeout(boot,120);
 })();
 </script>
 </body>
