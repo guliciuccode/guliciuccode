@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>David Guliciuc — Marketing &amp; Content</title>
+<meta name="description" content="Marketing and content showreel: Lancôme, Douglas, IQOS, Mercedes-Benz, Suzuki, Omoda, Krug, BLAF and more.">
+<meta property="og:title" content="David Guliciuc — Marketing &amp; Content">
+<meta property="og:description" content="Showreel: campaign films, social-first content and original formats.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://guliciuccode.github.io/guliciuccode/media/merc1.jpg">
+<meta name="theme-color" content="#0a0a0b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0a0b; --panel:#141416; --grey:#26262a; --mute:#8b8b92; --line:rgba(245,245,247,.16);
+  --white:#f6f6f8; --red:#ff2b2b; --red-deep:#c8101a;
+  --glow-w:0 0 14px rgba(255,255,255,.45),0 0 42px rgba(255,255,255,.18);
+  --glow-r:0 0 18px rgba(255,43,43,.75),0 0 60px rgba(255,43,43,.35);
+  --box-r:0 0 0 1px rgba(255,43,43,.6),0 0 40px rgba(255,43,43,.45),0 0 120px rgba(255,43,43,.18);
+  --wide:"Archivo",Arial Black,Helvetica,sans-serif; --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --ease:cubic-bezier(.2,.75,.15,1);
+}
+:root:not([data-theme="light"]){color-scheme:dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0a0b}}
+:root[data-theme="dark"]{--bg:#0a0a0b}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--bg);color:var(--white);font-family:var(--wide);overflow:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(ellipse 60% 50% at 85% 10%,rgba(255,43,43,.10),transparent 70%),radial-gradient(ellipse 50% 40% at 10% 100%,rgba(255,255,255,.04),transparent 70%)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opacity:.07;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* ---------- type ---------- */
+.mono{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.hx{font-family:var(--wide);font-variation-settings:"wdth" 125;font-weight:900;text-transform:uppercase;line-height:.84;letter-spacing:-.025em;color:var(--white);text-shadow:var(--glow-w)}
+.h1{font-size:clamp(40px,8.2vw,150px)}
+.h2{font-size:clamp(40px,7.4vw,128px)}
+.h3{font-size:clamp(32px,4.6vw,78px)}
+.red{color:var(--red);text-shadow:var(--glow-r)}
+.outline{color:transparent;-webkit-text-stroke:1px rgba(246,246,248,.32);text-shadow:none;font-family:var(--wide);font-variation-settings:"wdth" 125;font-weight:900;text-transform:uppercase;line-height:.84;letter-spacing:-.025em;white-space:nowrap}
+.outline.r{-webkit-text-stroke:1px rgba(255,43,43,.55);filter:drop-shadow(0 0 10px rgba(255,43,43,.35))}
+.block{display:inline-flex;align-items:center;justify-content:center;background:var(--red);color:var(--white);box-shadow:var(--box-r);
+  font-family:var(--mono);font-weight:500;letter-spacing:-.02em;line-height:1;padding:.12em .28em;text-shadow:0 0 12px rgba(255,255,255,.6)}
+p.lede{font-family:var(--wide);font-variation-settings:"wdth" 100;font-weight:400;font-size:clamp(15px,1.25vw,19px);line-height:1.55;color:#c9c9cf;max-width:33em}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;border:1px solid var(--line);padding:6px 10px;color:#d4d4d9;background:rgba(20,20,22,.6)}
+.tag:first-child{border-color:rgba(255,43,43,.6);color:var(--white);box-shadow:0 0 16px rgba(255,43,43,.25)}
+
+/* ---------- top meta bar ---------- */
+.metabar{position:fixed;top:0;left:0;right:0;z-index:40;display:flex;align-items:center;gap:18px;padding:clamp(14px,2.4vw,28px) clamp(16px,4vw,64px)}
+.metabar .rule{flex:1;height:1px;background:var(--line)}
+.metabar .live{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:var(--glow-r);margin-right:8px;animation:pulse 1.6s infinite}
+@keyframes pulse{50%{opacity:.35}}
+
+/* ---------- slides ---------- */
+.deck{position:fixed;inset:0;z-index:1}
+.slide{position:absolute;inset:0;padding:clamp(70px,9vh,110px) clamp(16px,4vw,64px) clamp(70px,9vh,96px);display:flex;flex-direction:column;justify-content:center;overflow:hidden;
+  opacity:0;visibility:hidden;transition:opacity .7s var(--ease),visibility 0s .7s}
+.slide.active{opacity:1;visibility:visible;transition:opacity .7s var(--ease),visibility 0s}
+
+.rv{opacity:0;transform:translateY(40px);transition:opacity .9s var(--ease),transform 1.1s var(--ease)}
+.active .rv{opacity:1;transform:none}
+.sx{opacity:0;transform:translateX(-60px);transition:opacity .9s var(--ease),transform 1.2s var(--ease)}
+.active .sx{opacity:1;transform:none}
+.active .d1{transition-delay:.12s}.active .d2{transition-delay:.24s}.active .d3{transition-delay:.36s}
+.active .d4{transition-delay:.48s}.active .d5{transition-delay:.6s}.active .d6{transition-delay:.72s}
+.blockin{transform:scaleX(0);transform-origin:left;transition:transform .9s var(--ease) .35s}
+.active .blockin{transform:scaleX(1)}
+.wipe{clip-path:inset(0 100% 0 0);transition:clip-path 1.1s var(--ease)}
+.active .wipe{clip-path:inset(0 0 0 0)}
+.active .wipe.d1{transition-delay:.15s}.active .wipe.d2{transition-delay:.3s}.active .wipe.d3{transition-delay:.45s}
+.drift{animation:drift 26s linear infinite}
+@keyframes drift{from{transform:translateX(0)}to{transform:translateX(-25%)}}
+
+/* ---------- media ---------- */
+.media{position:relative;overflow:hidden;background:var(--panel);border:1px solid var(--line);border-radius:clamp(10px,1.1vw,18px);isolation:isolate}
+.media video,.media img{display:block;width:100%;height:100%;object-fit:cover}
+.media::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 60%,rgba(10,10,11,.55))}
+.v{aspect-ratio:9/16}.h{aspect-ratio:16/9}
+.cap{position:absolute;left:10px;bottom:10px;border-radius:6px;z-index:2;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  background:var(--red);color:var(--white);padding:5px 8px;box-shadow:0 0 18px rgba(255,43,43,.5)}
+
+/* ---------- cover ---------- */
+.cover .row{display:flex;align-items:center;gap:clamp(10px,1.6vw,28px);flex-wrap:nowrap}
+.cover .yr{font-size:clamp(32px,6.4vw,118px);height:.92em}
+.cover .sub{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:clamp(18px,3vh,34px);padding-top:14px;border-top:1px solid var(--line)}
+.cover .echo{position:absolute;left:clamp(16px,4vw,64px);bottom:clamp(64px,9vh,96px);font-size:clamp(70px,15vw,260px);z-index:0}
+.cover .strip{position:absolute;left:0;right:0;bottom:0;height:34%;z-index:0;opacity:.28;display:flex;gap:6px;width:max-content;mask-image:linear-gradient(0deg,#000 30%,transparent)}
+.cover .strip .media{height:100%;aspect-ratio:9/16;border:0;border-radius:12px}
+.cover .front{position:relative;z-index:2}
+
+/* ---------- case ---------- */
+.case{display:grid;grid-template-columns:minmax(260px,29%) 1fr;gap:clamp(24px,4vw,64px);align-items:center;height:100%;position:relative;z-index:1}
+.case .copy{display:flex;flex-direction:column;gap:16px}
+.case .num{display:flex;align-items:center;gap:12px}
+.case .num b{font-family:var(--mono);font-weight:500;font-size:12px;background:var(--red);color:#fff;padding:3px 7px;box-shadow:0 0 16px rgba(255,43,43,.5)}
+.bgword{position:absolute;right:clamp(16px,4vw,64px);bottom:clamp(64px,9vh,96px);font-size:clamp(80px,16vw,280px);z-index:0;opacity:.55;pointer-events:none}
+.rail{display:flex;gap:clamp(10px,1.2vw,20px);align-items:center;justify-content:flex-end;height:100%;min-height:0;min-width:0;position:relative;z-index:1}
+.rail>*,.stack>*{flex:0 0 auto}
+.rail .v{height:auto;width:min(17vw,calc(66vh*.5625))}
+.rail .v.sm{height:auto;width:min(14.5vw,calc(52vh*.5625))}
+.case .copy{min-width:0}
+.hx.h3.long{font-size:clamp(26px,3.3vw,56px)}
+.block.nw{white-space:nowrap}
+.rail .h{width:min(48vw,820px)}
+.stack{display:flex;flex-direction:column;gap:clamp(8px,1.2vw,18px)}
+.stack .h{width:min(32vw,580px)}
+
+/* ---------- chapter ---------- */
+.chapter{justify-content:flex-end}
+.chapter .bg{position:absolute;inset:0;z-index:0}
+.chapter .bg video{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.15) brightness(.35)}
+.chapter .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,10,11,.96) 18%,rgba(10,10,11,.35)),linear-gradient(90deg,rgba(255,43,43,.16),transparent 50%)}
+.chapter>*:not(.bg){position:relative;z-index:1}
+.chapter .row{display:flex;align-items:center;gap:clamp(12px,2vw,30px);flex-wrap:wrap}
+.chapter .idx{font-size:clamp(40px,7.4vw,128px);height:.9em}
+.chapter .echo{font-size:clamp(60px,12vw,210px);margin-top:.12em}
+
+/* ---------- split / pillars ---------- */
+.split{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(30px,5vw,80px);align-items:end}
+.pillars{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.pillar{padding:clamp(16px,2vw,26px);border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(20,20,22,.55);transition:background .3s,box-shadow .3s}
+.pillar:hover{background:rgba(255,43,43,.08);box-shadow:inset 0 0 0 1px rgba(255,43,43,.5)}
+.pillar b{display:block;font-variation-settings:"wdth" 125;font-weight:800;text-transform:uppercase;font-size:clamp(15px,1.3vw,20px);letter-spacing:-.01em;margin-bottom:8px}
+.pillar b i{font-style:normal;font-family:var(--mono);font-weight:500;color:var(--red);text-shadow:var(--glow-r);margin-right:8px;font-size:.8em}
+.pillar span{font-family:var(--wide);font-variation-settings:"wdth" 100;font-size:14px;line-height:1.5;color:var(--mute)}
+
+/* ---------- clients ---------- */
+.clients{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:clamp(24px,4vh,44px)}
+.clients div{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:clamp(20px,3.4vh,40px) 14px;
+  font-variation-settings:"wdth" 125;font-weight:800;text-transform:uppercase;font-size:clamp(15px,1.8vw,30px);letter-spacing:-.02em;text-align:center;color:#d8d8dd;transition:all .35s}
+.clients div:hover{color:var(--white);background:var(--red);box-shadow:var(--box-r);text-shadow:0 0 12px rgba(255,255,255,.6)}
+
+/* ---------- gallery ---------- */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:1fr 1fr;gap:8px;height:min(72vh,680px)}
+.gallery .media{height:100%}
+.gallery .media:first-child{grid-row:span 2}
+.gallery img{transform:scale(1.1);filter:contrast(1.05);transition:transform 9s linear}
+.active .gallery img{transform:scale(1)}
+
+/* ---------- contact ---------- */
+.contact{justify-content:center}
+.contact .bg{position:absolute;inset:0;display:grid;grid-template-columns:repeat(4,1fr);opacity:.14;filter:grayscale(1)}
+.contact .bg video{width:100%;height:100%;object-fit:cover}
+.contact>*:not(.bg){position:relative;z-index:1}
+.contact .row{display:flex;align-items:center;gap:clamp(10px,1.6vw,26px);flex-wrap:wrap}
+.contact .blk{font-size:clamp(34px,7vw,120px);height:.95em}
+.contact .lines{display:flex;gap:10px;flex-wrap:wrap;margin-top:clamp(24px,4vh,40px)}
+.contact .lines a,.contact .lines span{font-family:var(--mono);font-size:clamp(12px,1.05vw,15px);text-transform:uppercase;letter-spacing:.06em;color:var(--white);text-decoration:none;border:1px solid var(--line);padding:12px 16px;background:rgba(20,20,22,.7)}
+.contact .lines a{border-color:var(--red);box-shadow:0 0 22px rgba(255,43,43,.35)}
+
+/* ---------- hud ---------- */
+.hud{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;align-items:center;gap:14px;padding:clamp(12px,2vw,22px) clamp(16px,4vw,64px);pointer-events:none}
+.hud .bar{flex:1;height:2px;background:var(--grey);position:relative;overflow:visible}
+.hud .bar i{position:absolute;inset:0;background:var(--red);box-shadow:var(--glow-r);transform-origin:left;transform:scaleX(0);transition:transform .8s var(--ease)}
+.hud button{pointer-events:auto;font-family:var(--mono);background:rgba(20,20,22,.8);border:1px solid var(--line);color:var(--white);width:38px;height:38px;cursor:pointer;font-size:14px;transition:all .25s}
+.hud button:hover{border-color:var(--red);box-shadow:0 0 18px rgba(255,43,43,.45)}
+.hud .play{width:auto;padding:0 14px;font-size:11px;letter-spacing:.12em}
+.hud .play.on{background:var(--red);border-color:var(--red);box-shadow:var(--box-r)}
+#count{font-family:var(--mono);font-size:12px;color:var(--white);letter-spacing:.08em;min-width:58px}
+
+/* ---------- winter feature ---------- */
+.winter .bg{position:absolute;inset:0;z-index:0}
+.winter .bg video{width:100%;height:100%;object-fit:cover;filter:grayscale(.6) brightness(.4) contrast(1.1) blur(2px);transform:scale(1.05)}
+.winter .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,11,.92) 30%,rgba(10,10,11,.45)),radial-gradient(ellipse 70% 60% at 70% 0%,rgba(235,240,255,.16),transparent 70%)}
+.winter .case{z-index:2}
+.iceglow{color:#fff;text-shadow:0 0 18px rgba(255,255,255,.9),0 0 50px rgba(220,230,255,.55),0 0 110px rgba(220,230,255,.3)}
+.outline.frost{-webkit-text-stroke:1px rgba(255,255,255,.4);filter:drop-shadow(0 0 14px rgba(255,255,255,.35));z-index:1}
+.winter .media{border-color:rgba(255,255,255,.35);box-shadow:0 0 30px rgba(255,255,255,.12)}
+
+@media (max-width:860px){
+  .slide{justify-content:flex-start;overflow-y:auto}
+  .metabar .tagsr{display:none}
+  .case,.split{grid-template-columns:1fr;height:auto;gap:22px}
+  .rail{justify-content:flex-start;overflow-x:auto;max-height:none;height:auto;padding-bottom:6px}
+  .rail .v,.rail .v.sm{height:50vh;width:auto;flex:0 0 auto}
+  .rail .h,.stack .h{width:82vw;flex:0 0 auto}
+  .clients{grid-template-columns:repeat(2,1fr)}
+  .gallery{grid-template-columns:1fr 1fr;height:auto}.gallery .media{aspect-ratio:3/4}.gallery .media:first-child{grid-row:auto}
+  .pillars{grid-template-columns:1fr}
+  .cover{justify-content:center}
+  .cover .row{flex-wrap:wrap}
+  .bgword{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<header class="metabar">
+  <span class="mono" style="color:var(--white)"><span class="live"></span>David Guliciuc / Marketing &amp; Content</span>
+  <span class="rule"></span>
+  <span class="mono tagsr">Direction | Edit | Colour | Motion</span>
+</header>
+
+<main class="deck" id="deck">
+
+<!-- 01 COVER -->
+<section class="slide cover">
+  <div class="strip drift">
+    <div class="media"><video src="media/lancome_916.mp4" muted loop playsinline></video></div>
+    <div class="media"><video src="media/merc1.mp4" muted loop playsinline></video></div>
+    <div class="media"><video src="media/villa_wine.mp4" muted loop playsinline></video></div>
+    <div class="media"><video src="media/krug_after.mp4" muted loop playsinline></video></div>
+    <div class="media"><video src="media/iqos2.mp4" muted loop playsinline></video></div>
+    <div class="media"><video src="media/pi_reel1.mp4" muted loop playsinline></video></div>
+    <div class="media"><video src="media/suz1.mp4" muted loop playsinline></video></div>
+    <div class="media"><video src="media/villa_google.mp4" muted loop playsinline></video></div>
+    <div class="media"><video src="media/douglas_reel.mp4" muted loop playsinline></video></div>
+    <div class="media"><video src="media/krug_dinner.mp4" muted loop playsinline></video></div>
+    <div class="media"><video src="media/lancome_916.mp4" muted loop playsinline></video></div>
+    <div class="media"><video src="media/omoda1.mp4" muted loop playsinline></video></div>
+  </div>
+  <div class="outline echo fit">Marketing</div>
+  <div class="front">
+    <div class="row">
+      <h1 class="hx h1 sx">Marketing</h1>
+      <span class="block yr blockin">2026</span>
+    </div>
+    <h1 class="hx h1 sx d1">&amp; Content<span class="red">.</span></h1>
+    <div class="sub rv d3">
+      <span class="mono" style="color:var(--white)">Marketing · Content · Campaigns</span>
+      <span class="mono">Beauty / Automotive / Experiences</span>
+    </div>
+  </div>
+</section>
+
+<!-- 02 INTRO -->
+<section class="slide">
+  <div class="split">
+    <div>
+      <div class="mono rv">[ 00 ] What I do</div>
+      <h2 class="hx h2 sx d1" style="margin-top:18px">Cut for<br><span class="red">attention.</span></h2>
+      <p class="lede rv d2" style="margin-top:26px">I build content the way people actually watch it: vertical first, a hook in the first second, graded and sound-designed like a film. One team from brief to final delivery, so the idea survives all the way to the feed.</p>
+    </div>
+    <div class="pillars rv d3">
+      <div class="pillar"><b><i>01</i>Campaign films</b><span>Hero spots and brand films, shot and finished in 4K.</span></div>
+      <div class="pillar"><b><i>02</i>Social-first</b><span>Reels, stories and cutdowns built natively for the feed.</span></div>
+      <div class="pillar"><b><i>03</i>Aftermovies</b><span>Event coverage turned into same-week recaps and series.</span></div>
+      <div class="pillar"><b><i>04</i>Original formats</b><span>Series and podcasts: identity, episodes and shorts.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 CLIENTS -->
+<section class="slide">
+  <div class="mono rv">[ 00 ] Trusted by</div>
+  <div class="row" style="display:flex;align-items:center;gap:clamp(10px,1.6vw,24px);flex-wrap:wrap;margin-top:16px">
+    <h2 class="hx h2 sx d1">Brands</h2><span class="block blockin" style="font-size:clamp(28px,5vw,86px);height:.95em">×11</span>
+  </div>
+  <div class="clients rv d2">
+    <div>Lancôme</div><div>Douglas</div><div>IQOS</div>
+    <div>Mercedes-Benz</div><div>Suzuki</div><div>Omoda</div><div>Krug</div>
+    <div>Google</div><div>BLAF 2026</div><div>Pro Supps</div><div>Perfect Imperfect</div>
+  </div>
+</section>
+
+<!-- 04 CHAPTER 01 -->
+<section class="slide chapter">
+  <div class="bg"><video src="media/lancome_kpi.mp4" poster="media/lancome_kpi.jpg" muted loop playsinline></video></div>
+  <div class="mono rv">Chapter</div>
+  <div class="row" style="margin-top:14px">
+    <span class="block idx blockin">01</span>
+    <h2 class="hx h2 sx d1">Beauty &amp; Luxury</h2>
+  </div>
+  <div class="outline r echo fit rv d3">Beauty &amp; Luxury</div>
+</section>
+
+<!-- 05 LANCOME -->
+<section class="slide">
+  <div class="case">
+    <div class="copy">
+      <div class="num rv"><b>01.1</b><span class="mono">Beauty · Social campaign</span></div>
+      <h3 class="hx h3 sx d1">Lancôme</h3>
+      <p class="lede rv d2">Social-first campaign content for Lancôme: vertical edits made for the feed, plus a results film that walks the brand team through what the campaign delivered.</p>
+      <div class="tags rv d3"><span class="tag">9:16 reels</span><span class="tag">Results film</span><span class="tag">Edit · Grade · Motion</span></div>
+    </div>
+    <div class="rail">
+      <div class="media v wipe"><video src="media/lancome_916.mp4" poster="media/lancome_916.jpg" muted loop playsinline></video></div>
+      <div class="stack">
+        <div class="media h wipe d1"><video src="media/lancome_kpi.mp4" poster="media/lancome_kpi.jpg" muted loop playsinline></video><span class="cap">Results film</span></div>
+        <div class="media h wipe d2"><video src="media/lancome_team.mp4" poster="media/lancome_team.jpg" muted loop playsinline style="object-position:center 30%"></video><span class="cap">Power Team</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 DOUGLAS -->
+<section class="slide">
+  <div class="case">
+    <div class="copy">
+      <div class="num rv"><b>01.2</b><span class="mono">Beauty · Event content</span></div>
+      <h3 class="hx h3 long sx d1">Douglas<br>Convention</h3>
+      <p class="lede rv d2">Two days of beauty convention turned into a content engine: day-by-day recap films for the brand and vertical cuts for social, delivered while the event was still trending.</p>
+      <div class="tags rv d3"><span class="tag">Event coverage</span><span class="tag">Recap films</span><span class="tag">Social cutdowns</span></div>
+    </div>
+    <div class="rail">
+      <div class="media h wipe"><video src="media/douglas_conv.mp4" poster="media/douglas_conv.jpg" muted loop playsinline></video><span class="cap">Day 2</span></div>
+      <div class="media v sm wipe d1"><video src="media/douglas_reel.mp4" poster="media/douglas_reel.jpg" muted loop playsinline></video></div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 PHILIP MORRIS -->
+<section class="slide">
+  <div class="case">
+    <div class="copy">
+      <div class="num rv"><b>01.3</b><span class="mono">Corporate · Brand film</span></div>
+      <h3 class="hx h3 sx d1">Philip<br>Morris</h3>
+      <p class="lede rv d2">A long-form brand film shot and finished in 4K: corporate storytelling with the polish of a commercial.</p>
+      <div class="tags rv d3"><span class="tag">4K brand film</span><span class="tag">Direction · Edit · Grade</span></div>
+    </div>
+    <div class="rail">
+      <div class="media h wipe" style="width:min(56vw,960px)"><video src="media/pm.mp4" poster="media/pm.jpg" muted loop playsinline></video><span class="cap">Brand film · 4K</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 IQOS -->
+<section class="slide">
+  <div class="case">
+    <div class="copy">
+      <div class="num rv"><b>01.4</b><span class="mono">Campaign · Prague</span></div>
+      <h3 class="hx h3 sx d1">IQOS<br><span class="red">Prague</span></h3>
+      <p class="lede rv d2">Daily recaps from IQOS's Prague campaign: the city by day and night, the people and the craft, edited fast enough to post while the campaign was still running.</p>
+      <div class="tags rv d3"><span class="tag">Daily recaps</span><span class="tag">On-location</span><span class="tag">Vertical edits</span></div>
+    </div>
+    <div class="rail">
+      <div class="media v wipe"><video src="media/iqos1.mp4" poster="media/iqos1.jpg" muted loop playsinline></video><span class="cap">Day 3 recap</span></div>
+      <div class="media v wipe d1"><video src="media/iqos2.mp4" poster="media/iqos2.jpg" muted loop playsinline></video></div>
+      <div class="media v sm wipe d2"><video src="media/iqos3.mp4" poster="media/iqos3.jpg" muted loop playsinline></video></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 CHAPTER AUTO -->
+<section class="slide chapter">
+  <div class="bg"><video src="media/merc2.mp4" poster="media/merc2.jpg" muted loop playsinline></video></div>
+  <div class="mono rv">Chapter</div>
+  <div class="row" style="margin-top:14px">
+    <span class="block idx blockin">02</span>
+    <h2 class="hx h2 sx d1">Automotive</h2>
+  </div>
+  <div class="outline r echo fit rv d3">Drive</div>
+</section>
+
+<!-- 11 MERCEDES -->
+<section class="slide">
+  <div class="case">
+    <div class="copy">
+      <div class="num rv"><b>02.1</b><span class="mono">Automotive · Dealer campaign</span></div>
+      <h3 class="hx h3 long sx d1">Mercedes-Benz<br><span class="red">Bucharest</span></h3>
+      <p class="lede rv d2">A reel for Mercedes-Benz Bucharest: light trails, the star and the car through the cold, cut to feel as premium as the badge.</p>
+      <div class="tags rv d3"><span class="tag">Brand reel</span><span class="tag">Night &amp; snow shoot</span><span class="tag">Edit · Grade</span></div>
+    </div>
+    <div class="rail">
+      <div class="media v wipe"><video src="media/merc1.mp4" poster="media/merc1.jpg" muted loop playsinline></video></div>
+      <div class="media v wipe d1"><video src="media/merc2.mp4" poster="media/merc2.jpg" muted loop playsinline></video></div>
+      <div class="media v wipe d2"><video src="media/merc3.mp4" poster="media/merc3.jpg" muted loop playsinline></video></div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 OMODA -->
+<section class="slide">
+  <div class="case">
+    <div class="copy">
+      <div class="num rv"><b>02.2</b><span class="mono">Automotive · Launch campaign</span></div>
+      <h3 class="hx h3 sx d1">Omoda</h3>
+      <p class="lede rv d2">Campaign content for Omoda's plug-in hybrid: detail shots, the drive and the reveal, built as vertical edits for social.</p>
+      <div class="tags rv d3"><span class="tag">Campaign</span><span class="tag">PHEV</span><span class="tag">Vertical edits</span></div>
+    </div>
+    <div class="rail">
+      <div class="media v wipe"><video src="media/omoda1.mp4" poster="media/omoda1.jpg" muted loop playsinline></video></div>
+      <div class="media v wipe d1"><video src="media/omoda2.mp4" poster="media/omoda2.jpg" muted loop playsinline></video></div>
+    </div>
+  </div>
+</section>
+
+<!-- 13 SUZUKI WINTER -->
+<section class="slide winter">
+  <div class="bg"><video src="media/suz4.mp4" poster="media/suz4.jpg" muted loop playsinline></video></div>
+  <div class="case">
+    <div class="copy">
+      <div class="num rv"><b>02.3</b><span class="mono" style="color:var(--white)">Featured · Winter campaign</span></div>
+      <h3 class="hx h3 sx d1">Suzuki<br><span class="iceglow">Winter</span></h3>
+      <span class="block nw blockin" style="font-size:clamp(16px,1.7vw,28px);align-self:flex-start">Swift · Test Drive</span>
+      <p class="lede rv d2">A winter campaign for Suzuki: the Swift on snowy mountain roads, a test-drive story told from the driver's seat, shot cold and graded crisp.</p>
+      <div class="tags rv d3"><span class="tag">Winter campaign</span><span class="tag">Test-drive series</span><span class="tag">Mountain shoot</span></div>
+    </div>
+    <div class="rail">
+      <div class="media v wipe"><video src="media/suz1.mp4" poster="media/suz1.jpg" muted loop playsinline></video></div>
+      <div class="media v wipe d1"><video src="media/suz2.mp4" poster="media/suz2.jpg" muted loop playsinline></video></div>
+      <div class="media v wipe d2"><video src="media/suz3.mp4" poster="media/suz3.jpg" muted loop playsinline></video><span class="cap">Swift</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 CHAPTER 02 -->
+<section class="slide chapter">
+  <div class="bg"><video src="media/villa_google.mp4" poster="media/villa_google.jpg" muted loop playsinline style="object-position:center 35%"></video></div>
+  <div class="mono rv">Chapter</div>
+  <div class="row" style="margin-top:14px">
+    <span class="block idx blockin">03</span>
+    <h2 class="hx h2 sx d1">Experiences</h2>
+  </div>
+  <div class="outline r echo fit rv d3">Hospitality</div>
+</section>
+
+<!-- 11 KRUG -->
+<section class="slide">
+  <div class="case">
+    <div class="copy">
+      <div class="num rv"><b>03.1</b><span class="mono">Champagne · Experiences</span></div>
+      <h3 class="hx h3 sx d1">Krug</h3>
+      <p class="lede rv d2">Krug lunch and dinner experiences, captured end to end: a full after-movie for the house, plus short-form cuts of the table, the pour and the room.</p>
+      <div class="tags rv d3"><span class="tag">After-movie</span><span class="tag">Dining series</span><span class="tag">Social cuts</span></div>
+    </div>
+    <div class="rail">
+      <div class="media v wipe"><video src="media/krug_after.mp4" poster="media/krug_after.jpg" muted loop playsinline></video><span class="cap">After-movie</span></div>
+      <div class="media v sm wipe d1"><video src="media/krug_dinner.mp4" poster="media/krug_dinner.jpg" muted loop playsinline></video><span class="cap">Dinner</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 THE VILLA -->
+<section class="slide">
+  <div class="case">
+    <div class="copy">
+      <div class="num rv"><b>03.2</b><span class="mono">Google event · Saint-Émilion</span></div>
+      <h3 class="hx h3 long sx d1">Events &amp;<br><span class="red">Experiences</span></h3>
+      <p class="lede rv d2">Two experiences: a Google event captured for social, and a Saint-Émilion wine tasting filmed among the vineyards.</p>
+      <div class="tags rv d3"><span class="tag">Google event</span><span class="tag">Saint-Émilion tasting</span></div>
+    </div>
+    <div class="rail">
+      <div class="media v wipe"><video src="media/villa_google.mp4" poster="media/villa_google.jpg" muted loop playsinline></video><span class="cap">Google event</span></div>
+      <div class="media v wipe d1"><video src="media/villa_wine.mp4" poster="media/villa_wine.jpg" muted loop playsinline></video><span class="cap">Saint-Émilion</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 13 BLAF -->
+<section class="slide">
+  <div class="case">
+    <div class="copy">
+      <div class="num rv"><b>03.3</b><span class="mono">Festival · Coffee culture</span></div>
+      <h3 class="hx h3 sx d1">BLAF <span class="red">2026</span></h3>
+      <p class="lede rv d2">The festival's aftermovie plus a six-part interview series from the floor: competitors, coffee geeks and supporters, each with their own story.</p>
+      <div class="tags rv d3"><span class="tag">Aftermovie</span><span class="tag">6-part interview series</span></div>
+    </div>
+    <div class="rail">
+      <div class="media v wipe"><video src="media/bcr.mp4" poster="media/bcr.jpg" muted loop playsinline></video><span class="cap">Aftermovie</span></div>
+      <div class="media v wipe d1"><video src="media/blaf_katerina.mp4" poster="media/blaf_katerina.jpg" muted loop playsinline></video><span class="cap">Interview · Katerina</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 16 PRO SUPPS -->
+<section class="slide">
+  <div class="case">
+    <div class="copy">
+      <div class="num rv"><b>03.4</b><span class="mono">Sports nutrition · Expo</span></div>
+      <h3 class="hx h3 long sx d1">Pro Supps<br><span class="red">× Deiu</span></h3>
+      <p class="lede rv d2">A segment for Pro Supps with athlete Andrei Deiu at their expo stand: the booth, the crowd and the athletes, cut with gym-floor energy.</p>
+      <div class="tags rv d3"><span class="tag">Brand segment</span><span class="tag">Expo coverage</span><span class="tag">Athlete feature</span></div>
+    </div>
+    <div class="rail">
+      <div class="media v wipe"><video src="media/supps1.mp4" poster="media/supps1.jpg" muted loop playsinline></video></div>
+      <div class="media v wipe d1"><video src="media/supps2.mp4" poster="media/supps2.jpg" muted loop playsinline></video></div>
+    </div>
+  </div>
+</section>
+
+<!-- 14 CHAPTER 03 -->
+<section class="slide chapter">
+  <div class="bg"><video src="media/pi_ep3.mp4" poster="media/pi_ep3.jpg" muted loop playsinline></video></div>
+  <div class="mono rv">Chapter</div>
+  <div class="row" style="margin-top:14px">
+    <span class="block idx blockin">04</span>
+    <h2 class="hx h2 sx d1">Original</h2>
+  </div>
+  <div class="outline r echo fit rv d3">Formats</div>
+</section>
+
+<!-- 15 PERFECT IMPERFECT -->
+<section class="slide">
+  <div class="case">
+    <div class="copy">
+      <div class="num rv"><b>04.1</b><span class="mono">Video podcast · Beauty &amp; style</span></div>
+      <h3 class="hx h3 long sx d1">Perfect<br><span class="red">Imperfect</span></h3>
+      <p class="lede rv d2">A beauty and style video podcast: multicam episodes filmed and finished in 4K, with three vertical reels cut from every episode for the feed.</p>
+      <div class="tags rv d3"><span class="tag">4K podcast episodes</span><span class="tag">3 reels / episode</span><span class="tag">Edit · Grade · Titles</span></div>
+    </div>
+    <div class="rail">
+      <div class="stack">
+        <div class="media h wipe"><video src="media/pi_ep3.mp4" poster="media/pi_ep3.jpg" muted loop playsinline></video><span class="cap">Episode 3 · 4K</span></div>
+        <div class="media h wipe d1"><video src="media/pi_ep11.mp4" poster="media/pi_ep11.jpg" muted loop playsinline></video><span class="cap">Episode 11 · 4K</span></div>
+      </div>
+      <div class="media v sm wipe d2"><video src="media/pi_reel1.mp4" poster="media/pi_reel1.jpg" muted loop playsinline></video><span class="cap">Reel</span></div>
+      <div class="media v sm wipe d3"><video src="media/pi_reel2.mp4" poster="media/pi_reel2.jpg" muted loop playsinline></video><span class="cap">Reel</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 16 PROCESS -->
+<section class="slide">
+  <div class="split">
+    <div>
+      <div class="mono rv">[ 05 ] How we work</div>
+      <h2 class="hx h2 sx d1" style="margin-top:18px">Brief<br>to <span class="red">feed.</span></h2>
+      <p class="lede rv d2" style="margin-top:26px">No hand-offs where ideas get lost. The person who pitches the concept is the one who shoots it, cuts it and delivers every format you need.</p>
+    </div>
+    <div class="pillars rv d3">
+      <div class="pillar"><b><i>01</i>Concept</b><span>Creative direction, hooks and scripts built around your goal.</span></div>
+      <div class="pillar"><b><i>02</i>Production</b><span>Shoot days, events and aerials, with a crew sized to the brief.</span></div>
+      <div class="pillar"><b><i>03</i>Post</b><span>Edit, colour grade, sound design and motion titles.</span></div>
+      <div class="pillar"><b><i>04</i>Delivery</b><span>Hero film plus every cutdown, ratio and caption version.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 17 CONTACT -->
+<section class="slide contact">
+  <div class="bg">
+    <video src="media/lancome_team.mp4" muted loop playsinline></video>
+    <video src="media/pi_reel3.mp4" muted loop playsinline></video>
+    <video src="media/merc1.mp4" muted loop playsinline></video>
+    <video src="media/krug_dinner.mp4" muted loop playsinline></video>
+  </div>
+  <div class="mono rv">[ 06 ] Let's talk</div>
+  <h2 class="hx h1 sx d1" style="margin-top:16px">Let's make</h2>
+  <div class="row">
+    <span class="block blk blockin">something</span>
+    <h2 class="hx h1 sx d2">loud<span class="red">.</span></h2>
+  </div>
+  <div class="lines rv d4">
+    <span>David Guliciuc</span>
+    <a href="mailto:guliciucdavidbookings@gmail.com">guliciucdavidbookings@gmail.com</a>
+    <a href="tel:+40768898194">0768 898 194</a>
+  </div>
+</section>
+
+</main>
+
+<div class="hud">
+  <button id="prev" aria-label="Previous">←</button>
+  <span id="count">01 / 21</span>
+  <div class="bar"><i id="prog"></i></div>
+  <button class="play" id="auto">AUTOPLAY</button>
+  <button id="next" aria-label="Next">→</button>
+</div>
+
+<script>
+(function(){
+  var slides=[].slice.call(document.querySelectorAll('.slide')), i=0, timer=null, AUTO_MS=8000;
+  var count=document.getElementById('count'), prog=document.getElementById('prog'), autoBtn=document.getElementById('auto');
+  function pad(n){return (n<10?'0':'')+n}
+  function show(n){
+    n=Math.max(0,Math.min(slides.length-1,n));
+    slides.forEach(function(s,k){
+      var on=k===n;
+      s.classList.toggle('active',on);
+      [].forEach.call(s.querySelectorAll('video'),function(v){
+        if(on){ v.muted=true; var p=v.play(); if(p&&p.catch)p.catch(function(){}); }
+        else { v.pause(); }
+      });
+    });
+    i=n;
+    count.textContent=pad(n+1)+' / '+pad(slides.length);
+    prog.style.transform='scaleX('+((n+1)/slides.length)+')';
+    try{history.replaceState(null,'','#'+(n+1))}catch(e){}
+  }
+  function next(){ show(i+1<slides.length?i+1:(timer?0:i)) }
+  function prev(){ show(i-1) }
+  function toggleAuto(){
+    if(timer){clearInterval(timer);timer=null;autoBtn.textContent='AUTOPLAY';autoBtn.classList.remove('on')}
+    else{timer=setInterval(next,AUTO_MS);autoBtn.textContent='PAUSE';autoBtn.classList.add('on')}
+  }
+  document.getElementById('next').onclick=next;
+  document.getElementById('prev').onclick=prev;
+  autoBtn.onclick=toggleAuto;
+  document.addEventListener('keydown',function(e){
+    if(['ArrowRight','PageDown',' '].indexOf(e.key)>-1){e.preventDefault();next()}
+    else if(['ArrowLeft','PageUp'].indexOf(e.key)>-1){e.preventDefault();prev()}
+    else if(e.key==='Home'){show(0)} else if(e.key==='End'){show(slides.length-1)}
+    else if(e.key==='f'||e.key==='F'){ try{ if(!document.fullscreenElement){document.documentElement.requestFullscreen()} else {document.exitFullscreen()} }catch(err){} }
+    else if(e.key==='p'||e.key==='P'){toggleAuto()}
+  });
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){ if(x0===null)return; var dx=e.changedTouches[0].clientX-x0; if(Math.abs(dx)>50){dx<0?next():prev()} x0=null});
+  // keep every big word fully on screen
+  function fitAll(){
+    var gut=Math.max(16,Math.min(64,innerWidth*.04)), maxW=innerWidth-gut*2;
+    [].forEach.call(document.querySelectorAll('.fit,.hx.h1,.hx.h2'),function(el){
+      el.style.fontSize=''; el.style.whiteSpace='nowrap';
+      var w=el.scrollWidth, row=el.parentElement.classList.contains('row')?el.parentElement:null, avail=maxW;
+      if(row){ var others=0; [].forEach.call(row.children,function(c){ if(c!==el) others+=c.offsetWidth+parseFloat(getComputedStyle(row).columnGap||0) }); if(others<maxW*.5 && innerWidth>860) avail=maxW-others; }
+      if(el.querySelector('br')){ el.style.whiteSpace=''; return; }
+      if(w>avail){ var fs=parseFloat(getComputedStyle(el).fontSize); el.style.fontSize=Math.floor(fs*avail/w*0.98)+'px'; }
+    });
+  }
+  fitAll(); window.addEventListener('resize',fitAll);
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fitAll);
+  // size the video rails to fill each screen
+  function layoutRails(){
+    var mobile=innerWidth<=860;
+    [].forEach.call(document.querySelectorAll('.rail'),function(rail){
+      var kids=[].slice.call(rail.children);
+      function clear(el){el.style.width='';el.style.height='';[].forEach.call(el.querySelectorAll('.media'),function(m){m.style.width='';m.style.height=''})}
+      kids.forEach(clear); if(mobile) return;
+      var W=rail.clientWidth, H=rail.clientHeight, g=parseFloat(getComputedStyle(rail).columnGap)||16;
+      if(!W||!H) return;
+      var A=0,B=0;
+      kids.forEach(function(k){
+        if(k.classList.contains('stack')){ A+=(16/9)/2; B+=(16/9)/2*g; }
+        else if(k.classList.contains('h')) A+=16/9; else A+=9/16;
+      });
+      var h=Math.min(H*0.9,(W-g*(kids.length-1)+B)/A); h=Math.floor(h);
+      kids.forEach(function(k){
+        if(k.classList.contains('stack')){ var hi=(h-g)/2; k.style.gap=g+'px'; [].forEach.call(k.children,function(m){m.style.height=hi+'px';m.style.width=(hi*16/9)+'px'}); }
+        else if(k.classList.contains('h')){ k.style.height=h+'px'; k.style.width=(h*16/9)+'px'; }
+        else { k.style.height=h+'px'; k.style.width=(h*9/16)+'px'; }
+      });
+    });
+  }
+  layoutRails(); window.addEventListener('resize',layoutRails);
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(layoutRails);
+  var start=parseInt((location.hash||'#1').slice(1),10)-1;
+  requestAnimationFrame(function(){show(isNaN(start)?0:start)});
+})();
+</script>
+</body>
+</html>
